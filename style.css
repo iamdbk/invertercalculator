@@ -3,12 +3,63 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 90%;
+  max-width: 50ch;
+  margin-top: 0.8em;
+}
+
+input {
+  padding-left: 1rem;
+}
 /* ****************** VA - div ******************* */
 
 .main-label {
-  display: inline-block;
+  /* border: 1px solid grey; */
+  /* width: 35%; */
 }
 .va-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.va-form {
+  width: 80%;
+  margin-top: 0.5em;
+}
+.va-result {
+  display: none;
+  margin-bottom: 0.8em;
+}
+.va-div > h1 {
+  width: 80%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clear,
+input[type="submit"] {
+  width: 90%;
+  outline: none;
+  background-color: white;
+  border: 2px solid #919191;
+  border-radius: 1em;
+  padding: 0.1em 0;
+  margin-bottom: 0.6em;
+
+  /* color: white; */
+}
+.clear {
+  width: 60%;
+}
+.clear:focus {
+  outline: none;
 }

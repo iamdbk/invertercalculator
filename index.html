@@ -13,47 +13,70 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+   
     <section class="container">
       <div class="va-div">
-        <form action="#">
-          <div>
-            <label class="main-label"
-              >LED tube <input type="number" class="main-input"
-            /></label>
+        <h2>For calculating VA</h2>
+        <form action="#" class="va-form">
+          <div class="row">
+            <label class="main-label" for="tube"
+              >LED tube </label> <input type="number" class="main-input" va-tube id="tube"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >LED Bulb<input type="number" class="main-input"
-            /></label>
+
+          <div class="row">
+            <label class="main-label" for="bulb"
+              >LED Bulb </label> <input type="number" class="main-input" va-bulb id="bulb"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >Fan<input type="number" class="main-input"
-            /></label>
+
+          <div class="row"> 
+            <label class="main-label" for = "fan"
+              >Fan</label>  <input type="number" class="main-input" va-fan id="fan"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >TV<input type="number" class="main-input"
-            /></label>
+
+          <div class="row">
+            <label class="main-label" for="tc"
+              >TV </label><input type="number" class="main-input" va-tv id="tv"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >Laptop<input type="number" class="main-input"
-            /></label>
+
+          <div class="row">
+            <label class="main-label" for="lap"
+              >Laptop </label> <input type="number" class="main-input" va-lap id="lap"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >Desktop<input type="number" class="main-input"
-            /></label>
+          <div class="row">
+            <label class="main-label" for="desk"
+              >Desktop</label>  <input type="number" class="main-input" va-desk id="desk"
+            />
           </div>
-          <div>
-            <label class="main-label"
-              >Miscellaneous<input type="number" class="main-input"
-            /></label>
+          <div class="row">
+            <label class="main-label" for="misc"
+              >Miscell </label> <input
+                type="number"
+                class="main-input"
+                readonly
+                va-misc
+                id="misc"
+            />
           </div>
-          <input type="submit" value="Calculate Actual Va" />
+          <div class="col">
+            <button class="clear ">Clear All</button>
+            <input type="submit" value="Calculate Actual VA" />
+            <input type="text" class="va-result" />
+          </div>
+            
+            
         </form>
-      </div>
+    
+      
+        
+    
+    
+    
+      
     </section>
 
     <script src="app.js"></script>
