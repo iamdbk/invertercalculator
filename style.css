@@ -26,7 +26,7 @@ input {
   align-items: center;
 }
 .va-form {
-  width: 80%;
+  width: 85%;
   margin-top: 0.5em;
 }
 .va-result {
@@ -93,6 +93,6 @@ h2.second {
   border: 2px solid rgb(15, 182, 15);
 }
 .bu-form {
-  width: 80%;
+  width: 85%;
   margin-top: 0.5em;
 }

@@ -57,6 +57,7 @@ totalInputs.forEach(function (current) {
     if (e.keyCode === 13) {
     } else {
       va_result.style.display = "none";
+      batteryResult.style.display = "none";
     }
   });
 });
@@ -86,7 +87,7 @@ bu_form.addEventListener("submit", function (e) {
       console.log(batteryValue);
     }
   });
-  let backupTime = (batteryAh.value * batteryValue * 9.6) / (sum * va);
+  let backupTime = (batteryAh.value * batteryValue * 9.6) / (sum - 20);
   batteryResult.value = backupTime;
   batteryResult.style.display = "block";
   console.log(va);
