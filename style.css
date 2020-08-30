@@ -5,9 +5,10 @@
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 50ch;
   margin-top: 0.8em;
+  padding: 3em 0;
 }
 
 input {
@@ -31,6 +32,10 @@ input {
 .va-result {
   display: none;
   margin-bottom: 0.8em;
+  padding: 0;
+  height: 50px;
+  text-align: center;
+  border: 2px solid rgb(15, 182, 15);
 }
 .va-div > h1 {
   width: 80%;
@@ -60,6 +65,34 @@ input[type="submit"] {
 .clear {
   width: 60%;
 }
-.clear:focus {
+.clear:focus,
+.clear-2:focus {
   outline: none;
+}
+
+h2.second {
+  margin-top: 0.8em;
+}
+.clear-2 {
+  width: 90%;
+  outline: none;
+  background-color: white;
+  border: 2px solid #919191;
+  border-radius: 1em;
+  padding: 0.1em 0;
+  margin-bottom: 0.6em;
+  width: 60%;
+}
+
+.result-2 {
+  display: none;
+  margin-bottom: 0.8em;
+  padding: 0;
+  height: 50px;
+  text-align: center;
+  border: 2px solid rgb(15, 182, 15);
+}
+.bu-form {
+  width: 80%;
+  margin-top: 0.5em;
 }

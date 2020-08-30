@@ -13,70 +13,81 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
     <section class="container">
       <div class="va-div">
         <h2>For calculating VA</h2>
         <form action="#" class="va-form">
           <div class="row">
-            <label class="main-label" for="tube"
-              >LED tube </label> <input type="number" class="main-input" va-tube id="tube"
-            />
+            <label class="main-label" for="tube">LED tube </label>
+            <input type="number" class="main-input" va-tube id="tube" />
           </div>
 
           <div class="row">
-            <label class="main-label" for="bulb"
-              >LED Bulb </label> <input type="number" class="main-input" va-bulb id="bulb"
-            />
-          </div>
-
-          <div class="row"> 
-            <label class="main-label" for = "fan"
-              >Fan</label>  <input type="number" class="main-input" va-fan id="fan"
-            />
+            <label class="main-label" for="bulb">LED Bulb </label>
+            <input type="number" class="main-input" va-bulb id="bulb" />
           </div>
 
           <div class="row">
-            <label class="main-label" for="tc"
-              >TV </label><input type="number" class="main-input" va-tv id="tv"
-            />
+            <label class="main-label" for="fan">Fan</label>
+            <input type="number" class="main-input" va-fan id="fan" />
           </div>
 
           <div class="row">
-            <label class="main-label" for="lap"
-              >Laptop </label> <input type="number" class="main-input" va-lap id="lap"
-            />
+            <label class="main-label" for="tv">TV </label
+            ><input type="number" class="main-input" va-tv id="tv" />
+          </div>
+
+          <div class="row">
+            <label class="main-label" for="lap">Laptop </label>
+            <input type="number" class="main-input" va-lap id="lap" />
           </div>
           <div class="row">
-            <label class="main-label" for="desk"
-              >Desktop</label>  <input type="number" class="main-input" va-desk id="desk"
-            />
+            <label class="main-label" for="desk">Desktop</label>
+            <input type="number" class="main-input" va-desk id="desk" />
           </div>
           <div class="row">
-            <label class="main-label" for="misc"
-              >Miscell </label> <input
-                type="number"
-                class="main-input"
-                readonly
-                va-misc
-                id="misc"
+            <label class="main-label" for="misc">Miscell </label>
+            <input
+              type="number"
+              class="main-input"
+              readonly
+              va-misc
+              id="misc"
             />
           </div>
           <div class="col">
-            <button class="clear ">Clear All</button>
+            <button class="clear">Clear All</button>
             <input type="submit" value="Calculate Actual VA" />
-            <input type="text" class="va-result" />
+            <input type="text" class="va-result" readonly />
           </div>
-            
-            
         </form>
-    
-      
-        
-    
-    
-    
-      
+        <h2 class="second">Backup Time</h2>
+        <form action="#" class="bu-form">
+          <div class="row">
+            <span>Battery</span>
+            <label class="main-label" for="1"
+              >1<input type="radio" name="battery" id="1" value="1" />
+            </label>
+
+            <label class="main-label" for=""
+              >2<input type="radio" name="battery" id="2" value="2" />
+            </label>
+
+            <label class="main-label" for="3"
+              >3<input type="radio" name="battery" id="3" value="3" />
+            </label>
+          </div>
+          <div class="row">
+            <label class="main-label">Battery AH </label
+            ><input type="number" class="second-input" battery-ah />
+          </div>
+          <div class="col">
+            <button class="clear-2">Clear All</button>
+            <input type="submit" value="Calculate backup time" />
+            <input type="text" class="result-2" readonly />
+          </div>
+        </form>
+      </div>
     </section>
 
     <script src="app.js"></script>
