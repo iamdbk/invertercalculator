@@ -61,7 +61,7 @@ totalInputs.forEach(function (current) {
   });
 });
 
-// To clear every input field of VA
+// To clear the entire calculator
 clear.addEventListener("click", function (e) {
   totalInputs.forEach(function (current) {
     current.value = "";
@@ -73,10 +73,11 @@ clear.addEventListener("click", function (e) {
     }
   });
   batteryAh.value = "";
+  batteryResult.style.display = "none";
   e.preventDefault();
 });
 
-// For backup time
+// For backup time submit
 bu_form.addEventListener("submit", function (e) {
   let batteryValue;
   noOfBattery.forEach(function (current) {
@@ -93,6 +94,7 @@ bu_form.addEventListener("submit", function (e) {
   e.preventDefault();
 });
 
+// To clear the backup time section
 clear2.addEventListener("click", function () {
   noOfBattery.forEach(function (current) {
     if (current.checked) {
@@ -100,4 +102,5 @@ clear2.addEventListener("click", function () {
     }
   });
   batteryAh.value = "";
+  batteryResult.style.display = "none";
 });
